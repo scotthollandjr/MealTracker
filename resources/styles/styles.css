@@ -1,3 +1,7 @@
 h1 {
-  color: blue;
+  color: #085d11;
+}
+
+.selected {
+  color: #2ab630;
 }
