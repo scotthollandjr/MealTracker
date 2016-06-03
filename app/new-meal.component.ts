@@ -5,12 +5,12 @@ import { Meal } from './meal.model';
   selector: 'new-meal',
   outputs: ['onSubmitNewMeal'],
   template: `
-    <div class="meal-form">
+    <div class="meal-form form-group">
       <h3>Add new meal:</h3>
-      <input placeholder="Name" class="col-4 input-lg" #newName>
-      <input placeholder="Details" class="col-4 input-lg" #newDetails>
-      <input placeholder="Calories" class="col-4 input-lg" #newCalories>
-      <button (click)="addMeal(newName, newDetails, newCalories)" class="btn">Add</button>
+      <input placeholder="Name" class="input-lg form-control" #newName>
+      <input placeholder="Details" class="input-lg form-control" #newDetails>
+      <input placeholder="Calories" class="input-lg form-control" #newCalories>
+      <button (click)="addMeal(newName, newDetails, newCalories)" class="btn btn-lg add-button">Add</button>
     </div>
   `
 })
