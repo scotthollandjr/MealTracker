@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "package": "^0.1.2"
+    "package": "^0.1.2",
+    "bootstrap": "^3.3.6"
   }
 }
