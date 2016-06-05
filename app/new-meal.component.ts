@@ -21,6 +21,9 @@ export class NewMealComponent {
   }
   addMeal(userName: HTMLInputElement, userDetails: HTMLInputElement, userCalories: HTMLInputElement) {
     var newMeal = new Meal(userName.value, userDetails.value, parseInt(userCalories.value), 0);
+    if (parseInt(userCalories.value) <= 499) {
+      newMeal.healthy = true;
+    }
     this.onSubmitNewMeal.emit(newMeal);
     userName.value = "";
     userDetails.value = "";

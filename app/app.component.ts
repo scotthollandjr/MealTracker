@@ -19,10 +19,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor() {
     this.meals = [
-      new Meal("Nachos", "So delish", 665, 0),
-      new Meal("Chicken Fried Steak", "Extra gravy", 750, 1),
-      new Meal("Bacon Bleu Burger", "Side of seasoned tots", 860, 2),
-      new Meal("Chips and Salsa", "Tomatillo salsa", 240, 3)
+      // new Meal("Nachos", "So delish", 665, 0),
+      // new Meal("Chicken Fried Steak", "Extra gravy", 750, 1),
+      // new Meal("Bacon Bleu Burger", "Side of seasoned tots", 860, 2),
+      // new Meal("Chips and Salsa", "Tomatillo salsa", 240, 3)
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
