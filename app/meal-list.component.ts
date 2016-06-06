@@ -24,6 +24,8 @@ import { HealthyPipe } from './healthy.pipe';
         [class.selected]="currentMeal === selectedMeal"
         [meal]="currentMeal">
       </meal-display>
+      <hr>
+      <h4>Total Calories Today: {{ totalCalories }}</h4>
     </div>
     <div class="col-xs-6">
       <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal">
@@ -38,6 +40,7 @@ export class MealListComponent {
   public onMealSelect: EventEmitter<Meal>;
   public selectedMeal: Meal;
   public filterHealthy: string = "all";
+  public totalCalories: number = 0;
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
@@ -49,6 +52,7 @@ export class MealListComponent {
   createMeal(newMeal: Meal): void {
     newMeal.id = this.mealList.length;
     this.mealList.push(newMeal);
+    this.totalCalories += newMeal.calories;
   }
   onChange(filterOption) {
     this.filterHealthy = filterOption;

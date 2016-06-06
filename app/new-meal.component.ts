@@ -30,3 +30,7 @@ export class NewMealComponent {
     userCalories.value = "";
   }
 }
+
+//this.totalCalories += parseInt(userCalories.value);
+//console.log(this.totalCalories);
+//<h4>Total Calories Today: {{ totalCalories }}</h4>
