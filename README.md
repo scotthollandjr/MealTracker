@@ -1,4 +1,4 @@
-# _JavaScript Angular JS Independent project_
+# _Meal Tracker_
 
 ##### _6/3/2016_
 
@@ -9,19 +9,21 @@ Meal Tracker project for Epicodus JavaScript course, week 2 Code Review (Angular
 This project will demonstrate proficiency in JavaScript, TypeScript, and Angular.
 
 
-#### Technologies Used
-
-_This website will use HTML, CSS, and Java_
+## Technologies Used
+* Angularjs
+* JavaScript
+* npm
+* bower
 
 #### Installation
-
 Install the project files by following the link below and cloning this repository:
 
 https://github.com/theAppanaut/MealTracker.git
 
-$ npm install bower -g
-$ bower init
+* npm install bower -g
+* bower init
 
 #### License
 
-MIT License. Copyright (c) 2016 **_Scott Holland, Jr._**
+MIT License
+Copyright (c) 2016 **_Scott Holland, Jr._**
